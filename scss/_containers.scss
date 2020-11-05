@@ -1,0 +1,169 @@
+@import 'animations';
+
+.container {
+    background: url("../images/illustration-dashboard.png") 0vw 50vh no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem auto;
+    width: 85%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+
+    &__brand {
+        margin: 2.5rem auto;
+    }
+
+    &__content {
+        margin: 0 auto;
+
+        &__title {
+            margin-bottom: 1.5rem;
+            font-weight: $light;
+
+            &__bold {
+                color: $darkBlue;
+                font-weight: $bold;
+            }
+        }
+
+        &__subtitle {
+            margin-bottom: 3rem;
+            color: $darkBlue;
+            font-weight: $normal;
+        }
+    }
+
+    &__subscribe {
+        width: 90%;
+        margin: 0 auto;
+
+        &__input {
+            width: 100%;
+            padding: 1rem 2rem;
+            border: 0.05rem solid $paleBlue;
+            border-radius: 2rem;
+            font-size: 1rem;
+
+            @include transition(0.2s);
+
+            &:focus {
+                outline: none;
+            }
+
+            &:invalid {
+                border: 0.125rem solid $lightRed;
+            }
+
+            &::placeholder {
+                color: $paleBlue;
+            }
+
+            &::-webkit-input-placeholder {
+                color: $paleBlue;
+            }
+
+            &::-moz-placeholder {
+                color: $paleBlue;
+            }
+
+            &::-ms-input-placeholder {
+                color: $paleBlue;
+            }
+        }
+
+        &__error {
+            display: block;
+            color: $lightRed;
+            font-weight: $normal;
+            font-style: italic;
+            font-size: 0.75rem;
+            margin: 0.5rem 0 2rem 0;
+
+            @include transition(0.2s);
+        }
+
+        &__submit {
+            width: 100%;
+            padding: 1rem 2rem;
+            border: 0.05rem solid $blue;
+            border-radius: 2rem;
+            box-shadow: 0 0.5rem 0.75rem 0 rgba($blue, $alpha: 0.2);
+            color: white;
+            font-weight: $normal;
+            background-color: $blue;
+            font-size: 1rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__social {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 7.5vh;
+
+        &__media {
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 0.05rem 0.05rem rgba($gray, $alpha: 0.25);
+            border-radius: 50%;
+            text-decoration: none;
+            color: $blue;
+            margin: 0 0.5rem;
+        }
+    }
+
+    &__copy {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+
+        &__text {
+            font-weight: $light;
+        }
+    }
+}
+
+.none {
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+
+    @include transition(0.2s);
+}
+
+footer {
+    width: 100%;
+    color: $gray;
+    text-align: center;
+    position: absolute;
+    font-weight: $light;
+    font-size: 0.75rem;
+
+    h6 {
+        font-weight: $light;
+        margin-top: 0.25rem;
+    }
+
+    a {
+        color: $darkBlue;
+        text-decoration: none;
+        font-weight: $bold;
+    }
+
+    .wavy {
+        text-decoration: wavy underline;
+    }
+}

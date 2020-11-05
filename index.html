@@ -5,9 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+		<script src="https://kit.fontawesome.com/503440b251.js" crossorigin="anonymous"></script>
     <title>Frontend Mentor | Ping coming soon page</title>
 
   </head>
@@ -24,23 +25,24 @@
 
       <section class="container__content">
 
-        <h1 class="container__content__title">
+        <h2 class="container__content__title">
 
-          We are launching soon!
+          We are launching <span class="container__content__title__bold">soon!</span>
 
-        </h1>
+        </h2>
 
-        <h4 class="container__content__subtitle">
+        <h5 class="container__content__subtitle">
 
           Subscribe and get notified
 
-        </h4>
+        </h5>
 
       </section>
 
       <form class="container__subscribe">
 
-        <input type="email" name="email" id="email" class="container__subscribe__input">
+        <input type="email" name="email" id="email" placeholder="Your email address..."
+          class="container__subscribe__input" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
         <label for="error" class="container__subscribe__error none">Please provide a valid email address</label>
         <button type="submit" class="container__subscribe__submit">Notify Me</button>
 
@@ -77,19 +79,21 @@
       <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          <span class="attribution__wavy">Front</span>end Mentor
+          <span class="wavy">Front</span>end Mentor
         </a>.
       </p>
 
       <h6>
         Coded by
         <a href="http://www.github.com/Seezly" target="_blank">Sergio
-          <span class="attribution__wavy">"Seezly"</span> Gutierrez
+          <span class="wavy">"Seezly"</span> Gutierrez
         </a>
         .
       </h6>
 
     </footer>
+
+    <script src="./js/app.js"></script>
 
   </body>
 
