@@ -19,24 +19,27 @@
         margin: 0 auto;
 
         &__title {
-            margin-bottom: 1.5rem;
+            margin: 0 0 1.5rem 0;
             font-weight: $light;
+            letter-spacing: 1.5px;
+            font-size: 1.75em;
 
             &__bold {
                 color: $darkBlue;
                 font-weight: $bold;
+                letter-spacing: normal;
             }
         }
 
         &__subtitle {
             margin-bottom: 3rem;
             color: $darkBlue;
-            font-weight: $normal;
+            font-weight: $light;
         }
     }
 
     &__subscribe {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
 
         &__input {
@@ -94,10 +97,20 @@
             font-weight: $normal;
             background-color: $blue;
             font-size: 1rem;
+            cursor: pointer;
 
             &:focus {
                 outline: none;
             }
+        }
+    }
+
+    &__bg {
+        width: 100%;
+        margin: 2.25rem 0;
+
+        &__img {
+            width: 100%;
         }
     }
 
@@ -106,9 +119,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 7.5vh;
+        margin: 2rem auto;
 
         &__media {
             width: 2.5rem;
@@ -127,8 +138,6 @@
     &__copy {
         width: 100%;
         margin: 0 auto;
-        position: absolute;
-        bottom: 0;
 
         &__text {
             font-weight: $light;

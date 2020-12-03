@@ -1,0 +1,59 @@
+@media only screen and (min-width: 1024px) {
+    @import 'animations';
+
+    .container {
+        width: 42.5%;
+
+        &__content {
+
+            &__title {
+            font-size: 2.5em;
+            }
+        }
+
+        &__subscribe {
+            display: flex;
+
+            .flex {
+                width: 70%;
+            }
+
+            &__input {
+                width: 100%;
+
+                @include transition(0.2s);
+
+            }
+
+            &__submit {
+                width: 30%;
+                max-height: 3.25rem;
+                margin-left: 2.5%;
+
+                @include transition(0.2s);
+
+                &:hover {
+                    background-color: $paleBlue;
+                    border: 0.05rem solid $paleBlue;
+
+                    @include transition(0.2s);
+                }
+            }
+        }
+
+        &__social {
+
+            &__media {
+
+                @include transition(0.2s);
+
+                &:hover {
+                    color: white;
+                    background-color: $blue;
+
+                    @include transition(0.2s);
+                }
+            }
+        }
+    }
+}

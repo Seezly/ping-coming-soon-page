@@ -29,7 +29,6 @@ html {
 }
 
 body {
-  height: 100%;
   font-size: 20px;
   font-family: "Libre Franklin", "Helvetica neue", Helvetica;
   font-weight: 600;
@@ -59,20 +58,23 @@ MAIN
   margin: 0 auto;
 }
 .container__content__title {
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem 0;
   font-weight: 300;
+  letter-spacing: 1.5px;
+  font-size: 1.75em;
 }
 .container__content__title__bold {
   color: #151f29;
   font-weight: 700;
+  letter-spacing: normal;
 }
 .container__content__subtitle {
   margin-bottom: 3rem;
   color: #151f29;
-  font-weight: 600;
+  font-weight: 300;
 }
 .container__subscribe {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .container__subscribe__input {
@@ -126,18 +128,24 @@ MAIN
   font-weight: 600;
   background-color: #4f7df3;
   font-size: 1rem;
+  cursor: pointer;
 }
 .container__subscribe__submit:focus {
   outline: none;
+}
+.container__bg {
+  width: 100%;
+  margin: 2.25rem 0;
+}
+.container__bg__img {
+  width: 100%;
 }
 .container__social {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 7.5vh;
+  margin: 2rem auto;
 }
 .container__social__media {
   width: 2.5rem;
@@ -154,8 +162,6 @@ MAIN
 .container__copy {
   width: 100%;
   margin: 0 auto;
-  position: absolute;
-  bottom: 0;
 }
 .container__copy__text {
   font-weight: 300;
@@ -190,6 +196,64 @@ footer a {
 }
 footer .wavy {
   text-decoration: wavy underline;
+}
+
+/*
+
+MEDIA RULES
+
+*/
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 42.5%;
+  }
+  .container__content__title {
+    font-size: 2.5em;
+  }
+  .container__subscribe {
+    display: flex;
+  }
+  .container__subscribe .flex {
+    width: 70%;
+  }
+  .container__subscribe__input {
+    width: 100%;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+  }
+  .container__subscribe__submit {
+    width: 30%;
+    max-height: 3.25rem;
+    margin-left: 2.5%;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+  }
+  .container__subscribe__submit:hover {
+    background-color: #c2d3ff;
+    border: 0.05rem solid #c2d3ff;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+  }
+  .container__social__media {
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+  }
+  .container__social__media:hover {
+    color: white;
+    background-color: #4f7df3;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
